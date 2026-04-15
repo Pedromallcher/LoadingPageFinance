@@ -5,14 +5,15 @@ import React from "react";
 type ButtonProps= {
    textoString : string ,
    children? : React.ReactNode,
-   cor?: "green" | "red" | "blue",
+   cor?: "primary" | "red" | "blue",
+   classname? : string
 }
 
 
-export default function ButtonPrimary ({textoString , children , cor = "green" }:ButtonProps){
+export default function ButtonPrimary ({textoString , children , cor = "primary" , classname}:ButtonProps){
 
      const cores = {
-       green: "bg-[#2E4F21] text-white",
+       primary: "bg-[#2E4F21] text-white",
        blue: "bg-blue-500 text-white",
        red: "bg-red-500 text-white",
      };
@@ -20,7 +21,7 @@ export default function ButtonPrimary ({textoString , children , cor = "green" }
     
 
     return (
-        <button className={`${cores[cor]}`}>
+        <button className={`${cores[cor]} ${classname} `}>
            {textoString || children}
 
         </button>

@@ -9,7 +9,7 @@ export function Header () {
         <nav>
           <ul className="flex gap-4 items-center">
             <li className="text-[#2E4F21]">Services</li>
-            <li className="bg-[#2E4F21] p-3 rounded-4xl">Book</li>
+            <li className="bg-[#2E4F21] p-3 rounded-4xl text-white">Book</li>
           </ul>
         </nav>
       </div>
